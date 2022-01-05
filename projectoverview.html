@@ -1,0 +1,299 @@
+
+<link href="include/highslide-styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="Include/highslide.js"></script>
+<script type="text/javascript" src="Include/highslide.cfg.js"></script>
+<script type="text/javascript" src="Include/ajaxsync.js"></script>     
+<script type="text/javascript" src="Include/LoginControl.js"></script>     
+<script type='text/javascript' src='include/turn/jquery.min.js'></script>
+<script type='text/javascript' src="include/turn/turn.min.js"></script>
+<script type='text/javascript' src="include/ProjectOverview.js"></script>
+<link href="include/turn/flipper.css" rel="stylesheet" type="text/css" />  
+ 
+<!--BOOK-->
+<script type="text/javascript" src="include/swfobject.js"></script>
+<script type="text/javascript" src="include/flippingbook.js"></script>
+<script type="text/javascript" src="include/bookSettings.js"></script>
+<!--/BOOK-->    
+
+  <script type="text/javascript"  language="javascript">
+    
+var gintCurDiv = {gintCurDiv};
+
+var aryTemplateChoices=[{gstrTemplateChoices}];
+var aryCustomize = [{gstrCustomizeURLs}];
+var aryStatIds = [{gstrStatIds}]
+var aryVStatTemplateIds = [{gstrStatTemplateIds}]
+var gintCustomIndex = {gintCustomizeIndex};
+var gstrMappings = '{ProofVMappings}';
+var gstrListId = '{ListId}';
+var glngUoM = {UnitQtysQtyPerUnit};
+var lngMinQty = 0;
+var lngMaxQty = 0;
+var intProofTab = {DivCount};
+var strJSEnterQtyCaption = '{JSEnterQtyCaption}';
+var strJSEnterQtyZeroCaption = '{JSEnterQtyZeroCaption}';
+var strOPSSession = '{OPSSession}';
+var strVMappings = '{VMappings}';
+var blnDisplayCost = {blnDisplayCost};
+var lngClientProjectId = '{ClientProjectId}';
+var blnJSHideMappings = {JSHideMappings};
+var blnWrite = {blnWrite};
+var strJSSaveChangedSelectionCaption = '{JSSaveChangedSelectionCaption}';
+var strReadOnly = '{ReadOnly}';
+var strBook = '{book}';
+var strVprint = '{vprint}';
+var blnBook = {blnBook};
+var strImgFlipperWidth = /{imgFlipperWidth}/g;
+var intFlipperWidth = {FlipperWidth};
+var intFlipperHeight = {FlipperHeight};
+var strDisplayFlipper = /{displayFlipper}/g;
+var strShowHideFlipper = '{ShowHideFlipper}';
+var strDisplayStandardProof = /{displayStandardProof}/g;
+var strShowHideStandardProof = '{ShowHideStandardProof}';
+var blnVPrint = {blnVPrint};
+var strProjectTemplateId = '{ProjectTemplateId}';
+var intDivCount = {DivCount};
+var blnJSChangeSelection = {blnJSChangeSelection};
+var strJSChangedSelectionCaption = '{JSChangedSelectionCaption}';
+var blnJSMainMenu = {blnJSMainMenu};
+var strJSOrderNowCaption = '{JSOrderNowCaption}';
+var strHTMLEncodeProjectName = '{HTMLEncodeProjectName}';
+var strJSSaveOrderArtworkCaption = '{JSSaveOrderArtworkCaption}';
+var strJSLeaveWOSavingCaption = '{JSLeaveWOSavingCaption}';
+var strJSApprovalCaption = '{JSApprovalCaption}';
+var strCusTab = '{CusTab}';
+
+function getQuantityPrice()
+{
+  var strQty = '';
+  var strTQty = '';
+  var strURL = '';
+
+  {getQuantityPrice}
+  
+}
+function checkEntries()
+{
+	{JSCheckEntries}
+}
+function UpdateComment(ddlComments)
+{
+  document.getElementById('precomments').value = ddlComments.options[ddlComments.selectedIndex].value;
+}
+
+
+</script>
+<!--PreApprover-->
+<form method="post" action="ProofStationery.asp?order={OrderId}&preapprove=yes&type=1&k={PreApprovalKey}" name="frmEmailApproval" id="frmEmailApproval">
+
+					 <table width="100%" border="0" cellspacing="2" cellpadding="2" class=bordertable>
+					   <tr><td class="bordertableheader">{ApprovalHeading} - PM{OrderId}</td></tr>
+					   <tr><td valign="center"><b>{CommentsCaption}:</b><br>{CommentReasons}<textarea cols=35 rows=4 name=precomments id=precomments></textarea></td></tr>
+					   <tr><td align="center"><input type=submit name="btnApprove" value="{ButtonApproveCaption}">&nbsp;&nbsp;<input type=submit name="btnDecline" value="{ButtonDeclineCaption}"></td></tr>
+					 </table><br>
+
+</form>
+<!--/PreApprover-->
+<form method="post" onsubmit="return checkEntries()" name="frm1" id="frm1">
+    <div class="kit-container">
+        <div class="kit-nav">
+            <ul class="nav nav-tabs">
+                {Tabs}
+            </ul>
+
+            <div class="actionables">
+                <!--WRITE-->
+                <button type="button" class="btn btn-primary" id="btnPrev" name="btnPrev" onclick="prevClick()">{ButtonPreviousCaption}</button>
+                <button type="button" class="btn btn-primary" id="btnNext" name="btnNext" onclick="nextClick()">{ButtonNextCaption}</button>
+                <!--/WRITE-->
+            </div>
+        </div>
+
+        <div class="kit-content">
+            <!-- BEGIN PANEL -->
+            <div {panelprops}>
+                <iframe class="clsiframe" frameborder="0" id="frmEnterDetails" name="frmEnterDetails" src="{panelurl}"></iframe>
+            </div>
+
+            <!--VPRINT-->
+            <!--VPrintHideMappings-->
+            <div id="div{VPTab}" class="divhidden">
+                <div class="wrapper">
+                    {PrintListMappings}
+                </div>
+            </div>
+            <!--/VPrintHideMappings-->
+            <!--/VPRINT-->
+
+            <div id="div{DivCount}" class="{proofclass}">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="proof">
+                            <a href="ShowProject.asp?cid={ClientProjectId}&ro={ReadOnly}&pdf=1&{OPSSession}{vprint}" target="_blank">
+                                <img src="images/pdf.gif" border="0" alt="view pdf"> {LinkDownloadPDFCaption}
+                            </a>
+
+                            <div class="divproofarea">
+                                <div class="divorderpanel">
+                                    <div class="divproofhelptext">{ProofMenuHelpText}</div>
+                                    <div class="divorderinfo">
+                                        {PrintFileUpload}
+                                        
+                                        <!--VPRINT-->
+                                        <!--VPrintShowMappings-->
+                                        {PrintListMappings}
+                                        <!--/VPrintShowMappings-->
+                                        <!--/VPRINT-->
+                                        
+                                        <div class="divorderinfoheader">{OrderDetailsHeading}</div>
+                                        <div class="divorderitem">
+                                            <div class="divorderitemcaption">{ItemNameCaption}</div>
+                                            <div class="divorderitemfield">
+                                                <!--WRITE-->
+                                                <input type="text" size="20" name="txtSaveAs" id="txtSaveAs" value="{HTMLEncodeProjectName}" />
+                                                <!--/WRITE-->
+                                                <!--READ-->
+                                                {HTMLEncodeProjectName}
+                                                <!--/READ-->
+                                            </div>
+                                        </div>
+        
+                                        <!--ExtraInputFields-->
+                                        <div class="divorderitem">
+                                            {QuantityHTML}
+                                        </div>
+                                        
+                                        <!--POSTAGE-->
+                                        <div class="divorderitem">
+                                            <div class="divorderitemcaption">{PostageTypeCaption}</div>
+                                            <div class="divorderitemfield">
+                                                <!--WRITE-->
+                                                <select name="postage" id="postage" onchange="postageChange();"><option value="no">{PostageCaption}</option><option value="yes" {postageselected}>{PostageUrgentCaption}</option></select>
+                                                <!--/WRITE-->
+                                                <!--READ-->
+                                                {PostageCaptionRead}
+                                                <!--/READ-->
+                                            </div>
+                                        </div>
+                                        <!--/POSTAGE-->
+        
+                                        <div class="divorderitem">
+                                            <div class="divorderitemcaption">
+                                                <span id="spnCostCap" {displaycost}>{CostCaption}</span>
+                                            </div>
+                                            <div class="divorderitemfield">
+                                                <span id="theCost">{Cost}</span>
+                                            </div>
+                                        </div>
+        
+                                        <div {showpostage}>
+                                            <div class="divorderitem">
+                                                <div class="divorderitemcaption">
+                                                    <span id="spnPostageCap" {displaycost}>{PostageSelectedCaption}</span>&nbsp;
+                                                </div>
+                                                <div class="divorderitemfield">
+                                                    <span id="thePostageCost">{OrderPostageCost}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!--DisplayCost-->
+                                        <div class="divorderitem">
+                                            <div class="divorderitemcaption">
+                                                <span id="spnTotalCostCap" {displaycost}>&nbsp;</span>
+                                            </div>
+                                            <div class="divorderitemfieldtotal">
+                                                <span id="theTotalCost">{OrderCost}</span>
+                                            </div>
+                                        </div>
+                                        <!--/DisplayCost-->
+                                        
+                                        <!--ApproveArtwork-->
+                                        <div class="divorderitemapprove">
+                                            {ApproveArtworkText}
+                                        </div>
+                                        <!--/ApproveArtwork-->
+                                    </div>
+        
+                                    <!--WRITE-->
+                                    <div class="divorderbuttons">
+                                        <!--SaveButton-->
+                                        <input type="submit" class="highslide" value="{ButtonSaveCaption}" id="btnSave" name="btnSave" onClick="javascript:return CheckEmployeeLoggedIn(this);"/>
+                                        <!--/SaveButton-->
+                                        
+                                        <!--VPrintProcessList-->
+                                        <input type="submit" name="btnProcessList" id="btnProcessList" value="{ButtonVPrintProcessListCaption}" onClick="return CheckApproveArtwork();">
+                                        <!--/VPrintProcessList-->
+                                        
+                                        &nbsp;&nbsp;
+                                        <input type="submit" value="{BtnCartCaption}" id="btnCart" name="btnCart" {cartenabled} {carthide} onClick="return CheckApproveArtwork();"/>
+                                    </div>
+                                    <!--/WRITE-->
+                                </div>
+                                
+                                <div id="divProof" class="divproofart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="kit-product-selection">
+                <!--Panel1-->
+            </div>
+            <!-- /END PANEL -->
+        </div>
+    </div>
+
+    <script type="text/javascript" language="javascript">
+        function  adjustIFrameHeight()
+        {
+            if (gintCurDiv != {DivCount})
+            {
+                if (document.getElementById('div' + gintCurDiv).offsetHeight < 560)
+                {
+                    document.getElementById('div' + gintCurDiv).style.height='560px';
+                    document.getElementById('frmEnterDetails').style.height='555px';	
+                }
+            }
+        }
+        
+        function functionOnLoad()
+        {
+        
+            //<!--WRITE-->
+            canAddToCart();
+            {jsonload}
+            //<!--/WRITE-->        
+            {jsloadproof}
+            adjustIFrameHeight();
+        }
+    </script>
+    <br />
+      
+    <!--TotalQty-->
+    <input type="hidden" name="totalqty" id="totalqty" value="{ProjectQuantity}" />
+    <!--/TotalQty-->
+    <input type="hidden" name="cpid" id="cpid" value="{ClientProjectId}" />
+    <input type="hidden" name="opssess" id="opssess" value="{OPSSession}" />
+    <input type="hidden" name="newopssess" id="newopssess" value="" />
+    <input type="hidden" name="subtype" id="subtype" value="" />
+    <input type="hidden" name="prevclick" id="prevclick" value="{prevclick}" />
+    <input type="hidden" name="editid" id="editid" value="{editid}" />
+    <input type="hidden" name="hidOrderId" id="hidOrderId" value="{OrderId}">
+    <input type="hidden" name="originalEditId" id="originalEditId" value="{EditId}" />
+
+    <div class="highslide-html-content" id="divLoginBox" style="width: 470px; height: 400px">
+        <div style="height:20px; padding: 2px">
+            <a href="#" onclick="return hs.close(this)" class="control">Close</a>
+            <a href="#" onclick="return false" class="highslide-move control">Move</a>
+        </div>
+        <div class="highslide-body" style="padding: 0 5px 5px 5px;">
+            <iframe src="" style="width:99%; height:95%" frameborder="0" id="ifLoginBox"></iframe>
+        </div>
+    </div>    
+</form>
+
+<form method="post" name="frm2" id="frm2" target="_blank">
+    <input type="hidden" name="mappings" id="mappings" value="" />
+</form>

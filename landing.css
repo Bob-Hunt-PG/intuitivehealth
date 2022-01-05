@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+/* ***** Hero ***** */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 82vh;
+  }
+  .hero-container > .hero-content {
+    height: 90%;
+  }
+  .hero-container > .hero-content > .hero {
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  .hero-container > .hero-content > .hero#hero1 {
+    background-image: url(IntuitiveHealth7.png);
+  }
+  .hero-container > .hero-content > .hero#hero2 {
+    background-image: url(intuitivehealth29.png);
+  }
+  /* .hero-container > .hero-content > .hero#hero3 {
+    background-image: url(hero3.jpg);
+  } */
+  .hero-container > .hero-content > .hero .container {
+    height: 100%;
+  }
+  .hero-container > .hero-content > .hero p > b {
+    font-weight: 400;
+    padding: 10px 15px;
+    background: #6b3077;
+    text-transform: uppercase;
+  }
+  .hero-container > .hero-content > .hero h1 {
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 1px 2px 5px #000;
+    line-height: 1.5;
+  }
+  .hero-container > .hero-content > .hero h2 {
+    margin: 10px 0 0;
+    font-size: 50px;
+    color: #d62525;
+    text-shadow: 1px 2px 5px #000;
+    line-height: 0.5;
+  }
+  .fade-slide {
+    opacity: 0;
+    animation: fade-slide 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  }
+  .fade-slide.fs1 {
+    animation-delay: 0.5s;
+  }
+  .fade-slide.fs2 {
+    animation-delay: 0.75s;
+  }
+  .fade-slide.fs3 {
+    animation-delay: 1s;
+  }
+  @keyframes fade-slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  /* *****Hero End***** */
+
+  /* *****Product***** */
+  .product-catalog .container {
+    padding-bottom: 50px;
+  }
+  .product-catalog .product-content h1 {
+    position: relative;
+    font-size: 36px;
+    border-bottom: 1px solid #dadada;
+    padding: 0 0 10px 0;
+    margin: 0 0 35px;
+  }
+  .product-catalog .product-content h1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 75px;
+    height: 1px;
+    background: #d62525;
+  }
+  .product-catalog .product-content h1 > b {
+    color: #d62525;
+  }
+  .product-catalog .product-content a {
+    display: block;
+    padding: 15px;
+    margin-bottom: 2rem;
+    border: 1px solid #ebebeb;
+    transition: all 0.25s ease;
+  }
+  .product-catalog .product-content .brands a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 246px;
+    outline: 1px solid #dadada;
+    margin: 0 1px 1px 0;
+    padding: 20px;
+    border: none;
+  }
+  .product-catalog .product-content a:hover {
+    background: #efefef;
+  }
+  .product-catalog .product-content .brands a:hover {
+    background: #fff;
+  }
+  .product-catalog .product-content a > h3 {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+    text-decoration: none;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+/* Following lines are different than template.css */
+.product-catalog .product-content img {
+  width: 100%;
+  padding: 0 5px 15px;
+}
+
+.product-catalog .product-content .brands img {
+  padding: 0;
+}
+
+.product-catalog{
+  width: 100%;
+  height: 160vh;
+}
+
+.product-content{
+  width: 100%;
+  height: 105vh;
+  /* border: 2px solid green; */
+}
+
+#affiliated_companies{
+  width: 100%;
+  height: 45vh;
+  margin-top: 100px;
+}
+
+/* .product-content{ */
+    /* background-image: url("IntuitiveHealth29.png"); */
+
+    /* background-image: url("Files/BrokerBranding/intuitive/Include/IntuitiveHealth29.png"); */
+    /* background-image: url("https://www.iheruc.com/wp-content/uploads/2020/02/IntuitiveHealth7.png"); */
+/* } */
+/* End of different code */
+
+
+/* *****Product End***** */
