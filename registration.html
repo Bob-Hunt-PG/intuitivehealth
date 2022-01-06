@@ -395,7 +395,7 @@ function setup()
 #division-hide {
 	display: none;
 }
-.nameInput {
+.userInput {
 	margin-top: 2px;
 }
 
@@ -474,8 +474,8 @@ function setup()
 								<td>{NameSurnameCaption}</td>
 							</tr>
 							<tr>
-								<td><input type=text size="20" value="{FName}" Name="FName" class="nameInput"></td>
-                          		<td><input type=text size="20" value="{SName}" Name="SName" class="nameInput"></td>
+								<td><input type=text size="20" value="{FName}" Name="FName" class="uerInput"></td>
+                          		<td><input type=text size="20" value="{SName}" Name="SName" class="userInput"></td>
 							</tr>
 						</table>
 					</td>
@@ -504,7 +504,7 @@ function setup()
 							</tr>
 							<tr>
 								<td>
-									<input type=text size="44" value="{Email}" Name="ConfirmEmail">
+									<input type=text size="44" value="{Email}" Name="ConfirmEmail" class="userInput;">
 								</td>
 							</tr>
 						</table>
@@ -607,7 +607,7 @@ function setup()
 							</tr>
 							<tr>
 								<td>
-									<input type=Text size="30" Name="UserName" ID="UserName" Value="{UserName}" onkeyup="CheckUsername(this.id)">
+									<input type=Text size="30" Name="UserName" ID="UserName" Value="{UserName}" class="userInput;" onkeyup="CheckUsername(this.id)">
 									<img id=CheckUserImg name=CheckUserImg src="images/spacer.gif">
 								</td>
 							</tr>
