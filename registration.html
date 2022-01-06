@@ -423,8 +423,8 @@ function setup()
 							</thead>
 							<tbody>
 								<tr>
-									<td><input type="text" size="15" name="user" id="User"></td>
-									<td><input type="password" size="15" name="password" id="Password"></td>
+									<td><input type="text" size="15" name="user" id="User" class="userInput"></td>
+									<td><input type="password" size="15" name="password" id="Password" class="userInput"></td>
 								</tr>
 								<tr>
 									<td><a class="forgot-password" href="JavaScript: OpenWin('ForgottenPassword.asp')">{ForgottenPasswordCaption}</a></td>
@@ -474,7 +474,7 @@ function setup()
 								<td>{NameSurnameCaption}</td>
 							</tr>
 							<tr>
-								<td><input type=text size="20" value="{FName}" Name="FName" class="uerInput"></td>
+								<td><input type=text size="20" value="{FName}" Name="FName" class="userInput></td>
                           		<td><input type=text size="20" value="{SName}" Name="SName" class="userInput"></td>
 							</tr>
 						</table>
@@ -489,7 +489,7 @@ function setup()
 							</tr>
 							<tr>
 								<td>
-									<input type=text size="44" value="{Email}" Name="Email">
+									<input type=text size="44" value="{Email}" Name="Email" class="userInput">
 								</td>
 							</tr>
 						</table>
@@ -504,7 +504,7 @@ function setup()
 							</tr>
 							<tr>
 								<td>
-									<input type=text size="44" value="{Email}" Name="ConfirmEmail" class="userInput;">
+									<input type=text size="44" value="{Email}" Name="ConfirmEmail" class="userInput">
 								</td>
 							</tr>
 						</table>
@@ -531,9 +531,9 @@ function setup()
                           		<!-- <td>{FaxCaption}</td> -->
 							</tr>
 							<tr>
-                              	<td><input type=text size="20" value="{Phone}" Name="Phone"></td>
-                              	<td><input type=text size="20" value="{Mobile}" Name="Mobile"></td>
-                              	<!-- <td><input type=text size="20" value="{Fax}" Name="Fax"></td> -->
+                              	<td><input type=text size="20" value="{Phone}" Name="Phone" class="userInput"></td>
+                              	<td><input type=text size="20" value="{Mobile}" Name="Mobile" class="userInput"></td>
+                              	<!-- <td><input type=text size="20" value="{Fax}" Name="Fax" class="userInput"></td> -->
                             </tr>
 						</table>
 					</td>
@@ -623,8 +623,8 @@ function setup()
 								<td>{ConfirmPasswordCaption}</td>
 							</tr>
 							<tr>
-								<td><input type=password size="20" Name="Password" value="{Password}"></td>
-								<td><input type=password size="20" Name="ConfirmPassword" value="{Password}"></td>
+								<td><input type=password size="20" Name="Password" value="{Password}" class="userInput"></td>
+								<td><input type=password size="20" Name="ConfirmPassword" value="{Password}" class="userInput"></td>
 							</tr>
 						</table>
 					</td>
