@@ -1105,6 +1105,23 @@ td.nexjoboptions table tr td[align="right"] {
     #fff;
 }
 
+
+/**
+ *  Catalog
+ *  ----------------------------------------------------------------------------
+ *
+ *  The CSS below sets the styling for the catalog page.
+ *
+ *  ----------------------------------------------------------------------------
+**/
+
+	/* Hide the breadcrumbs */
+	#masterhelptext {
+		display: none;
+	}
+
+
+
 /**
  *  Footer
  *  ----------------------------------------------------------------------------
