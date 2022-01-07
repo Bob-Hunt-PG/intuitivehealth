@@ -1,3 +1,4 @@
+// Additional domains (if added) need to be manually added to the array below.
 $('input[name="Email"]').on('blur', function() {
     let value = $(this).val().split("@").pop();
     let domains = [];

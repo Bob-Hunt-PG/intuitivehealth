@@ -1,0 +1,1182 @@
+/**
+ *  Font Resources
+ *  ----------------------------------------------------------------------------
+ *
+ *  All fonts used on the storefront are imported below.
+ *
+ *  ----------------------------------------------------------------------------
+**/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700,900');
+
+/**
+ *  CSS Reset
+ *  ----------------------------------------------------------------------------
+ *
+ *  The CSS below resets the styles that are originally set by default 
+ *  for most of the clients browsers.
+ *
+ *  ----------------------------------------------------------------------------
+**/
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	max-width: 980px;
+}
+
+form[name="Approve"] table tr td {
+	border: 1px solid #ebebeb;
+	padding: 0.2rem 0.2rem;
+	font-size: 0.85rem;
+}
+
+form[name="Approve"] table tr td.tableheader {
+    font-weight: 600;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+}
+
+form[name="Approve"] table tr td[colspan="10"] {
+    font-weight: 600;
+	padding: 1rem;
+	font-size: 1.2rem;
+}
+
+form[name="Approve"] table tr td[colspan="9"] {
+    text-align: right;
+}
+
+.Select.a.Apparel.style::after {
+    content: '';
+    position: fixed;
+    background: 
+    #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    overflow: hidden;
+}
+
+/**
+ *  Navigation
+ *  ----------------------------------------------------------------------------
+ *
+ *  The CSS below sets the styling for the navigation on the storefront.
+ *
+ *  ----------------------------------------------------------------------------
+**/
+
+.navigation.nav-top {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.navigation.nav-top .nav.small-nav .nav-item .nav-link {
+	font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+	color: #444444;
+	padding: .5rem 1rem .5rem 0;
+}
+
+.navigation.nav-top .nav.small-nav .nav-item .nav-link i {
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+.navigation.nav-main {
+	position: relative;
+    z-index: 1;
+    box-shadow: 0px 6px 6px -6px #ebebeb;
+}
+
+.croppedImageThumbnail {
+	display: none;
+}
+
+.highslide-html-content .highslide-body {
+    height: auto !important;
+    width: auto !important;
+}
+
+.View.Orders .bootstrap-table {
+    padding-bottom: 5rem;
+}
+
+.Reports .content {
+    padding-bottom: 4rem;
+}
+
+.navigation.nav-main .nav .nav-item .nav-brand {
+	padding: 0.5rem 1rem 0rem 0;
+}
+
+.navigation.nav-main .nav .nav-item .nav-brand .nav-link {
+	padding: .5rem 1rem .5rem 0;
+}
+
+.navigation.nav-main .nav .nav-item .nav-link {
+	font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+	color: #000000;
+	padding: .5rem 1rem;
+}
+
+.navigation.nav-main .nav .nav-item .nav-link i {
+    font-size: 0.95rem;
+    vertical-align: text-top;
+}
+
+.navigation.nav-main .nav .nav-item .nav-link i ~ i {
+    font-size: 12px;
+    vertical-align: initial;
+}
+
+.navigation.nav-main .nav ~ .nav {
+	height: 76px;
+}
+
+.help {
+	font-size: 0.75rem;
+	color: #cccccc;
+	padding: 1rem 0;
+}
+
+.help a {
+    color: #007bff;
+}
+
+.help a:last-of-type {
+    color: #000000;
+}
+
+.proofthumbnailform {
+    float: left;
+}
+
+.table.proofthumbnail td {
+    border: 1px solid #dddddd;
+}
+
+.proofrhs {
+    float: right;
+}
+
+.table.proofwrite td {
+    border: 1px solid #dddddd;
+}
+
+.proofthumbnail .highslide img {
+    width: 100%;
+}
+
+.prooforderdetails td:first-of-type {
+    width: 160px;
+}
+
+.prooforderdetails td {
+    border: 1px solid #ebebeb;
+}
+
+.loading {
+	display: none;
+}
+
+.fixed-table-loading {
+    display: none;
+}
+
+.bootstrap-table .table.table-hover > thead > tr > th, .bootstrap-table .table.table-hover > tbody > tr > td {
+    border: 1px solid #ebebeb;
+}
+
+/**
+ *  Hero Slider
+ *  ----------------------------------------------------------------------------
+ *
+ *  The CSS below sets the styling for the hero slider on the landing page.
+ *
+ *  ----------------------------------------------------------------------------
+**/
+.hero-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.hero-container > .hero-content {
+	height: 90%;
+}
+  
+.hero-container > .hero-content > .hero {
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	color: #ffffff;
+}
+
+.hero-container > .hero-content > .hero#hero1 {
+	background-image: url(hero1.jpg);
+}
+
+.hero-container > .hero-content > .hero#hero2 {
+	background-image: url(hero2.jpg);
+}
+
+.hero-container > .hero-content > .hero#hero3 {
+	background-image: url(hero3.jpg);
+}
+
+.hero-container > .hero-content > .hero .container {
+	height: 100%;
+}
+
+.hero-container > .hero-content > .hero p > b {
+	font-weight: 400;
+	padding: 10px 15px;
+	background: #6b3077;
+	text-transform: uppercase;
+}
+
+.hero-container > .hero-content > .hero h1 {
+	margin: 0;
+    font-size: 60px;
+    text-shadow: 1px 2px 5px #000000;
+    line-height: 1.5;
+}
+
+.hero-container > .hero-content > .hero h2 {
+	margin: 10px 0 0;
+    font-size: 50px;
+    color: #d62525;
+    text-shadow: 1px 2px 5px #000000;
+    line-height: .5;
+}
+
+.fade-slide {
+	opacity: 0;
+	animation: fade-slide 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+
+.fade-slide.fs1 {
+	animation-delay: .5s;
+}
+
+.fade-slide.fs2 {
+	animation-delay: .75s;
+}
+
+.fade-slide.fs3 {
+	animation-delay: 1s;
+}
+
+@keyframes fade-slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/**
+ *  Product Catalog - Landing Page
+ *  ----------------------------------------------------------------------------
+ *
+ *  The CSS below sets the styling for the product categories on the 
+ *  landing page.
+ *
+ *  ----------------------------------------------------------------------------
+**/
+.product-catalog .container {
+    padding-bottom: 50px;
+}
+
+.product-catalog .product-content h1 {
+	position: relative;
+	font-size: 36px;
+	border-bottom: 1px solid #dadada;
+	padding: 0 0 10px 0;
+	margin: 0 0 35px;
+}
+
+.product-catalog .product-content h1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 75px;
+    height: 1px;
+    background: #d62525;
+}
+
+.product-catalog .product-content h1 > b {
+    color: #d62525;
+}
+
+.product-catalog .product-content a {
+    display: block;
+	padding: 15px;
+	margin-bottom: 2rem;
+   	border: 1px solid #ebebeb;
+    transition: all .25s ease;
+}
+
+.product-catalog .product-content .brands a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 246px;
+    outline: 1px solid #dadada;
+    margin: 0 1px 1px 0;
+    padding: 20px;
+    border: none;
+}
+
+.product-catalog .product-content a:hover {
+    background: #efefef;
+}
+
+.product-catalog .product-content .brands a:hover {
+    background: #ffffff;
+}
+
+.product-catalog .product-content a > h3 {
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+    text-decoration: none;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.product-catalog .product-content img {
+    width: 100%;
+    padding: 0 5px 15px;
+}
+
+.product-catalog .product-content .brands img {
+    padding: 0;
+}
+
+.shuffler {
+    padding: 0 0 5rem;
+}
+
+.shuffler h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.landing .product-container {
+	justify-content: center;
+	align-items: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product-container .product-title {
+	width: 100%;
+}
+
+.Product.Catalog .search-input {
+	display: none;
+}
+
+.shuffle-item {
+	border: none;
+}
+
+.shuffle-item-product {
+	margin-bottom: 30px;
+}
+
+.shuffle-item-product a {
+	position: relative;
+	display: block;
+	background: #ffffff;
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid #e0e0e0;
+	transition: all .25s ease;
+}
+
+.shuffle-item-product a .item-image:after {
+	content: 'Select Product';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 18px;
+	opacity: 0;
+	transition: all .25s ease;
+}
+
+.shuffle-item-product a:hover .item-image:after {
+	opacity: 1;
+}
+
+.shuffle-item-product a .item-container .item-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	border-bottom: 1px solid #ebebeb;
+	background: white;
+	padding: 0.75rem;
+    height: 280px;
+}
+
+.shuffle-item-product a .item-container .item-image img {
+	width: 100%;
+}
+
+.shuffle-item-product a .item-container .item-name {
+    padding: 1rem 1rem 0.5rem;
+}
+
+.shuffle-item-product a .item-container .item-name h3 {
+	color: #333333;
+	font-size: 14px;
+	text-align: center;
+	font-family: Lato;
+	font-weight: 600;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.shuffle-item-product a .item-container .product-description {
+	text-align: center;
+	font-size: 0.75rem;
+    padding: 0 0.5rem 0.5rem;
+	flex-direction: column;
+	align-items: center;
+	font-weight: bold;
+}
+
+.product-description h4 {
+    font-size: 1.25rem;
+}
+
+.product-filter ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.product-filter ul li > ul {
+	height: auto;
+	max-height: 0px;
+	overflow: hidden;
+	transition: all .25s ease;
+}
+
+.product-filter ul li.active > ul {
+	max-height: 500px;
+}
+
+.product-filter ul li > ul li .btn-list {
+	position: relative;
+	font-size: 14px;
+	padding: 4px 20px;
+}
+
+.product-filter ul li > ul.sub-menu li a i {
+	float: none;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	margin: 0;
+}
+
+.product-filter ul li > ul.sub-menu li a i.checkbox {
+	opacity: 1;
+	transition: all .25s ease;
+}
+
+.product-filter ul li > ul.sub-menu li.active a i.checkbox {
+	opacity: 0;
+}
+
+.product-filter ul li > ul.sub-menu li a i.checked {
+	opacity: 0;
+	transition: all .25s ease;
+}
+
+.product-filter ul li > ul.sub-menu li.active a i.checked {
+	opacity: 1;
+}
+
+.product-filter ul li .btn-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-radius: 0;
+	text-align: left;
+	background: none;
+	padding: 8px 0;
+	font-size: 0.95rem;
+	border: none;
+	color: #000;
+}
+
+.product-filter ul li .btn-list i {
+	vertical-align: middle;
+	float: right;
+	font-size: 1.05rem;
+}
+
+.table.style th,
+.table.orderdetails th {
+	border: none;
+}
+
+.table.style td,
+.table.orderdetails td {
+	border: 1px solid #ebebeb;
+}
+
+.table.style img {
+    border: 1px solid #ebebeb;
+}
+
+.table.buttons td {
+    border: none;
+}
+
+.product-image,
+.product-options {
+	background: #ffffff;
+}
+
+.product-options {
+	padding: 0 0 15px;
+}
+
+.product-options .free-proof {
+	padding: 25px 0;
+}
+
+.product-options .tabs .nav {
+	box-shadow: none;
+}
+
+.product-options .tabs ul li {
+	line-height: 2;
+}
+
+.product-options .tabs ul li ul {
+	margin: 0;
+}
+
+.product-options .tabs ul li ul li {
+	padding: 0;
+}
+
+.tabs .nav .nav-item {
+	padding: 0;
+}
+
+.product-pricing {
+	padding: 50px 25px 25px;
+}
+
+.product-pricing .table, 
+.product-pricing .table td, 
+.product-pricing .table th {
+	border: 1px solid #ebebeb;
+}
+
+.product-pricing .table .quantity {
+	width: 50px;
+	text-align: center;
+	outline: none;
+}
+
+.product-pricing .table .size {
+	width: 100%;
+	padding: 8px 10px;
+	min-width: 120px;
+	border: 1px solid #c5c5c5;
+}
+
+.product-options .tabs {
+	padding-top: 25px;
+}
+
+.product-side {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.product-options .product-input input, 
+.product-options .product-input textarea,
+.product-options .product-input select {
+    padding: .25rem .5rem;
+    border: 1px solid #ebebeb;
+}
+
+.row.pad-10 {
+    padding: 0.1rem 0;
+}
+
+.product-description h5 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 0 1rem;
+}
+
+.product-side-left {
+    border-left: 1px solid #ebebeb;
+}
+
+#ShoeSize {
+	width: 100%;
+	padding: 6px 8px;
+	border: 1px solid #c5c5c5;
+	border-radius: 3px;
+}
+
+.product-pricing .table .bold {
+	font-weight: 600;
+}
+
+.Enter.Details .buttons {
+	padding: 15px 0;
+}
+
+.loading .loading-text h3 {
+	color: #ffffff;
+}
+
+.product-options .header h3 {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.product-image > div .image {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	background: #ffffff;
+	padding-top: 1rem;
+}
+
+.product-image > div .image #spnFrontProof .highslide {
+	display: block;
+}
+
+.product-image > div .image #spnFrontProof img {
+	width: 100%;
+	border: 1px solid #ebebeb;
+}
+
+.product-image>div .image #spnBackProof {
+	padding-top: 1rem;
+}
+
+.product-image>div .image #spnBackProof img {
+    width: 100%;
+    border: 1px solid #ebebeb;
+}
+
+.product-options .labeltext {
+	background: none;
+	padding: 4px 0;
+	border: none !important;
+}
+
+.product-options .labeltext h5 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 0.2rem 0;
+    text-align: right;
+}
+
+.product-input .highslide {
+    background-color: transparent;
+    border: 1px solid #3e91ff;
+    color: #3e91ff;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    border-radius: 5rem;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.product-input .highslide:hover {
+    background-color: #3e91ff;
+    color: #ffffff;
+}
+
+.product-image .logo-disclaimer {
+	font-size: 12px;
+	width: 350px;
+	margin: 0 auto;
+	color: #ff0000;
+}
+
+.product-input font {
+	display: block;
+}
+
+.product-input #LogoPlacement,
+.product-input #Method {
+	width: 100%;
+	max-width: 215px;
+	padding: 8px 12px;
+	border: 1px solid #c5c5c5;
+}
+
+.product-input .logo-icons {
+	justify-content: start;
+	align-items: center;
+	padding: 10px 15px 25px;
+}
+
+.product-input .logo-icons > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	border: 1px solid #ebebeb;
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+.product-input .logo-icons img {
+	width: 100%;
+	cursor: pointer;
+}
+
+.product-refresh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.table.prooflist > tbody > tr > td {
+    border: none;
+}
+
+.table.prooflist > tbody > tr > td > table td {
+    border: 1px solid #ebebeb;
+}
+
+.addtocart {
+    padding: 1rem 0 5rem;
+    text-align: right;
+}
+
+.static-products h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Employee.Kit.Template .navigation, .Employee.Kit .footer {
+    display: none;
+}
+
+.kit-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kit-nav .nav-tabs {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.kit-nav .actionables {
+    white-space: nowrap;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 3px;
+}
+
+.kit-content div.itemdesc {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.kit-product-selection #div1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.kit-content div.itemdesc .itemdesc {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.kit-product-selection #div1>div:not(:first-child) {
+    flex: 1;
+}
+
+.kit-product-selection #div1 > div > div {
+    width: 100% !important;
+}
+
+.kit-product-selection #div1>div>div .divselected {
+    width: 100%!important;
+    height: auto!important;
+    background: #ebebeb;
+    color: #000000;
+}
+
+.kit-product-selection #div1>div>div .divselected>div:last-of-type {
+    height: 50px !important;
+}
+
+
+.kit-product-selection #div1 > div > div .divselected .cellname {
+    font-size: 0.85rem;
+    color: #000000;
+    padding: 0.5rem;
+    display: block;
+}
+
+.product-input {
+    position: relative;
+}
+
+.product-input font {
+    position: absolute;
+    top: 2px;
+    right: 30px;
+    font-size: 10px;
+}
+
+.kit-product-selection #div1 > div > div .divselected > div {
+    height: auto !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.kit-product-selection #div1>div>div .divselected>div .thumbwrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    background: #ccc;
+}
+
+.kit-product-selection #div1 > div > div .divselected > div .thumbwrapper a img {
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 0.5rem;
+}
+
+.kit-product-selection #div1 > div > div .divselected > div > div {
+    float: none !important;
+}
+
+.shuffle-item-product a .item-container .product-description .color,
+.front-back-details .product-description .descriptions .description .colors .color,
+.product-options .color {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #d4d4d4;
+	border-radius: 100%;
+	cursor: pointer;
+	margin-bottom: 6px;
+}
+
+form[action^="NexJobPage.asp?id=16"] tr .bordertableheader {
+    font-size: 1.25rem;
+    padding: 5px !important;
+}
+
+form[action^="NexJobPage.asp?id=16"] tr select, form[action^="NexJobPage.asp?id=16"] tr input {
+    display: block;
+    padding: 5px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+form[action^="NexJobPage.asp?id=16"] tr td:first-of-type {
+    font-weight: 600;
+    color: #000;
+    padding: 5px 1rem 5px 5px !important;
+}
+
+td.nexjobdescription {
+	display:block;
+	float:left;	
+}
+td.nexjoboptions {
+	display:block;
+}
+
+td.nexjoboptions select {
+    width: 100%;
+    max-width: 197px;
+}
+
+td.nexjoboptions .bordertableheader {
+    background: #ebebeb;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+}
+
+td.nexjoboptions table tr td[align="right"] {
+    font-size: 0.85rem;
+    text-align: right;
+    width: 155px;
+}
+
+.apparel-item .colors {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.apparel-item .product-description .colors h5,
+.apparel-item .labeltext h5 {
+    font-size: 0.85rem;
+    padding: 0;
+}
+
+.apparel-item .product-colors {
+	text-align: center;
+	padding-left: 1rem;
+}
+
+.apparel-item .product-colors .color {
+    margin: 0 0.1rem;
+}
+
+.apparel-item .logo-icons {
+	width: 100%;
+	display: flex;
+	padding: 0 0.25rem;
+}
+
+.apparel-item .logo-icons .col-sm-3 {
+    padding: 0.2rem;
+    height: 75px;
+}
+
+.apparel-item .row.pad-10 {
+	justify-content: center;
+	align-items: center;
+}
+
+.apparel-item br {
+	display: none;
+}
+
+.apparel-item .product-image > div .image #spnFrontProof img {
+    width: auto;
+    max-height: 400px;
+}
+
+.apparel-item .product-options .tabs ul li {
+    font-size: 0.85rem;
+}
+
+.apparel-item .product-pricing {
+    font-size: 0.85rem;
+}
+
+.apparel-item .col-6.product-side.product-side-left {
+    position: relative;
+}
+
+.apparel-item .buttons.pull-right {
+    position: absolute;
+    right: 0;
+}
+
+.apparel-item .product-pricing .table td {
+    padding: 0.5rem .75rem;
+    vertical-align: middle;
+}
+
+.apparel-item .product-pricing .table .hide {
+    display: none;
+}
+
+.apparel-item .comments #comment {
+    width: 100%;
+    border: 1px solid 
+    #ebebeb;
+    padding: 0.5rem 0.85rem;
+}
+
+.apparel-item .product-image > div .image {
+	align-items: center;
+	padding-top: 0;
+}
+
+.apparel-item .nav-tabs .nav-link {
+    font-size: 0.85rem;
+}
+
+.apparel-item .details {
+    font-size: 0.85rem;
+    padding: 1rem 0 0;
+}
+
+.apparel-item .description-list {
+    font-size: 0.85rem;
+}
+
+.apparel-item .product-specsheet h5 {
+    font-size: 0.85rem;
+}
+
+.extraorderfields p {
+	margin: 0;
+}
+
+.apparel-item .loading {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+}
+
+.apparel-item .loading-background {
+    width: 100%;
+    height: 100%;
+    background: 
+    #fff;
+}
+
+/**
+ *  Footer
+ *  ----------------------------------------------------------------------------
+ *
+ *  The CSS below sets the styling for the footer.
+ *
+ *  ----------------------------------------------------------------------------
+**/
+.footer {
+	padding: 50px 0 25px;
+	background: #1f1f1f;
+}
+
+.footer-panel {
+	float: left;
+	width: 100%;
+	max-width: 25%;
+}
+
+.footer-panel h2 {
+	margin: 0;
+	padding: 0 0 30px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.footer-panel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer-panel ul li {
+    line-height: 2.5;
+    color: #ffffff;
+}
+
+.footer-panel ul.social-icons li {
+	display: inline-block;
+	margin: 0 3px;
+	vertical-align: top;
+}
+
+.footer-panel ul.social-icons li:first-of-type {
+	margin-left: 0;
+}
+
+.footer-panel ul.social-icons li a {
+	display: block;
+	font-size: 30px;
+}
+
+.footer-panel ul.social-icons li a i {
+	vertical-align: top;
+}
+
+.footer-panel ul li a {
+	color: #ffffff;
+}
+
+.footer-panel ul li .field {
+	width: 90%;
+	padding: 5px 10px;
+	border: 1px solid #d9d9d9;
+}
+
+.copyright {
+    padding: 50px 0 0;
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
