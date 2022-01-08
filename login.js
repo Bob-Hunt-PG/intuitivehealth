@@ -1,5 +1,3 @@
-// Doesn't this entire thing need to be wrapped into a function
-// and added to line 494 of registration.html?
 
 // Additional domains (if added) need to be manually added to the array below.
 $('input[name="Email"]').on('blur', function() {
