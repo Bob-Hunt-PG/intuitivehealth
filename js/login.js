@@ -12,7 +12,7 @@ $('input[name="Email"]').on('blur', function() {
       'phs.org',
       'legacyer.com'
     ];
-  
+    console.log("Process has started!");
     console.log(allowedDomains.indexOf(value) > -1);
   
     if (allowedDomains.indexOf(value) > -1) {
