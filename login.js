@@ -13,22 +13,23 @@ $('input[name="Email"]').on('blur', function() {
     console.log("Process has started!");
     console.log(allowedDomains.indexOf(value) > -1);
   
-    if (allowedDomains.indexOf(value) > -1) {
+    if (allowedDomains.indexOf(value) > -1 || value === "") {
+
 
         if (value.indexOf('iheruc.com') > -1) {
-            $('select[name="CostCentre"] > option[value="672"]').prop('selected', true);
+            $('select[name="CostCentre"] > option[value="1121"]').prop('selected', true);
         }
           
         if (value.indexOf('riverview.org') > -1) {
-            $('select[name="CostCentre"] > option[value="670"]').prop('selected', true);
+            $('select[name="CostCentre"] > option[value="1124"]').prop('selected', true);
         }
       
         if (value.indexOf('phs.org') > -1) {
-            $('select[name="CostCentre"] > option[value="669"]').prop('selected', true);
+            $('select[name="CostCentre"] > option[value="1123"]').prop('selected', true);
         }
 
         if (value.indexOf('legacyer.com') > -1) {
-            $('select[name="CostCentre"] > option[value="671"]').prop('selected', true);
+            $('select[name="CostCentre"] > option[value="1125"]').prop('selected', true);
         }
       
       $('#btnSubmit').removeClass('hide');
