@@ -165,24 +165,20 @@ body {
 
 .product-catalog{
   width: 100%;
-  /* height: 160vh; */
 }
 
 .product-content{
-  width: 100%;
-  /* height: 105vh; */
-  /* border: 2px solid green; */
+  width: 100%;  
 }
 
 #affiliated_companies{
   width: 100%;
-  /* height: 45vh; */
+  height: 45vh;
   margin-top: 100px;
 }
 
 /* .product-content{ */
     /* background-image: url("IntuitiveHealth29.png"); */
-
     /* background-image: url("Files/BrokerBranding/intuitive/Include/IntuitiveHealth29.png"); */
     /* background-image: url("https://www.iheruc.com/wp-content/uploads/2020/02/IntuitiveHealth7.png"); */
 /* } */

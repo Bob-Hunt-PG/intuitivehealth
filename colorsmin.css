@@ -540,6 +540,9 @@
 .color.white {
   background: #fff;
 }
+
+
+
 .color.black.heather {
   background: -webkit-linear-gradient(top left, #000 50%, #a2a1a6 50%);
   background: -o-linear-gradient(top left, #000 50%, #a2a1a6 50%);
@@ -1014,4 +1017,35 @@
   background: -webkit-linear-gradient(top left, #4d4c47 50%, #bdbcb7 50%);
   background: -o-linear-gradient(top left, #4d4c47 50%, #bdbcb7 50%);
   background: linear-gradient(to bottom right, #4d4c47 50%, #bdbcb7 50%);
+}
+
+.color.collegiate.royal.blue{
+  background: rgb(0, 64, 159);
+}
+.color.steel.onyx {
+  background: rgb(125, 137, 143);
+}
+.color.arctic.navy {
+  background: rgb(27, 35, 68);
+}
+.color.city.grey.heather {
+  background: rgb(61, 58, 55);
+}
+.color.cardinal {
+  background: rgb(56, 0, 16);
+}
+.athletic.heather {
+  background: rgb(136, 143, 148);
+}
+.color.true.royal {
+  background: rgb(0, 41, 118);
+}
+.color.heather.gray {
+  background: rgb(189, 190, 195);
+}
+.color.dark.heather.gray {
+  background: rgb(128, 134, 134);
+}
+.color.charcoal.grey {
+  background: rgb(red, green, blue);
 }

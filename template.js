@@ -262,7 +262,7 @@ if (window.location.href.indexOf("Step1New.asp") > -1 || window.location.href.in
 		$('.description').find('.product-specsheet').hide();
 	}
 
-	$('.product-specsheet').find('a').attr('href', 'Files/BrokerBranding/nuco/Include/' + product_id + 'specsheet.pdf');
+	$('.product-specsheet').find('a').attr('href', 'Files/BrokerBranding/intuitiveADMIN/Include/' + product_id + 'specsheet.pdf');
 
 	$('#LogoPlacement').on('change', function() {
 		var logo = $('.logo-icon.selected');
@@ -971,9 +971,9 @@ function socialOnOff(e) {
 		$('#' + name + 'Handle').closest('.row').show();
 
 		if (name === 'Facebook') {
-			$('#' + name + 'Handle').val('facebook.com/nucotomorrow');
-		} else if (name === 'Twitter') {
-			$('#' + name + 'Handle').val('@nucotomorrow');
+			$('#' + name + 'Handle').val('https://www.facebook.com/IHeruc/');
+		} else if (name === 'LinkedIn') {
+			$('#' + name + 'Handle').val('https://www.linkedin.com/company/intuitivehealth/');
 		}
 	} else {
 		$('#' + name + 'Handle').closest('.row').hide();
@@ -1004,7 +1004,13 @@ function logoSelect(logo) {
 	var selected = $(logo).attr('alt'),
 		placement = $('#LogoPlacement').val(),
 		color = sessionStorage.getItem('Color');
-
+		if (color === 'White' && selected === 'Legacy ER Shirt Logo White') {
+			selected = 'Legacy ER Shirt Logo Color';
+		}
+	
+		if (color !== 'White' && selected !== 'Legacy ER Shirt Logo White') {
+			selected = 'Legacy ER Shirt Logo White';
+		}
 	$('.logo-icon').removeClass('selected');
 	$(logo).addClass('selected');
 
