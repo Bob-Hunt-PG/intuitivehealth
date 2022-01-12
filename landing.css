@@ -174,7 +174,7 @@ body {
 #affiliated_companies{
   width: 100%;
   margin-top: 100px;
-  display: none;
+  /* display: none; */
 }
 
 /* .product-content{ */
