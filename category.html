@@ -834,6 +834,22 @@ function FillCostInfo(strProduct, intArrayIndex)
 					<h2>Filter</h2>
 					<ul>
 						<!-- <li data-group="all" class="active"><a class="btn btn-list">All Products <i class="material-icons">keyboard_arrow_down</i></a></li> -->
+						<li data-group="businesscard" class="drop" >
+
+							<a class="btn btn-list">
+								Business Cards <i class="material-icons">keyboard_arrow_down</i>
+							</a>
+							<ul class="sub-menu">
+								<li data-group="all" class="drop">
+									<a class="btn btn-list">
+										<i class="material-icons checkbox">check_box_outline_blank</i>
+										<i class="material-icons checked">check_box</i>
+										View All
+									</a>
+								</li>
+							</ul>
+						</li>
+
 						<li data-group="stationery" class="drop">
 							<a class="btn btn-list">
 								Stationery <i class="material-icons">keyboard_arrow_down</i>
@@ -844,55 +860,6 @@ function FillCostInfo(strProduct, intArrayIndex)
 										<i class="material-icons checkbox">check_box_outline_blank</i>
 										<i class="material-icons checked">check_box</i>
 										View All
-									</a>
-								</li>
-								<li data-group="businesscard" class="drop">
-									<a class="btn btn-list">
-										<i class="material-icons checkbox">check_box_outline_blank</i>
-										<i class="material-icons checked">check_box</i>
-										Business Cards
-									</a>
-								</li>
-								<li data-group="customizablematerial" class="drop">
-									<a class="btn btn-list">
-										<i class="material-icons checkbox">check_box_outline_blank</i>
-										<i class="material-icons checked">check_box</i>
-										Customizable Material
-									</a>
-								</li>
-								<li data-group="envelope" class="drop">
-									<a class="btn btn-list">
-										<i class="material-icons checkbox">check_box_outline_blank</i>
-										<i class="material-icons checked">check_box</i>
-										Envelopes
-									</a>
-								</li>
-								<li data-group="letterhead" class="drop">
-									<a class="btn btn-list">
-										<i class="material-icons checkbox">check_box_outline_blank</i>
-										<i class="material-icons checked">check_box</i>
-										Letterhead
-									</a>
-								</li>
-								<li data-group="newemployeewelcomekit" class="drop">
-									<a class="btn btn-list">
-										<i class="material-icons checkbox">check_box_outline_blank</i>
-										<i class="material-icons checked">check_box</i>
-										New Employee Welcome Kit
-									</a>
-								</li>
-								<li data-group="uploadyourfiles" class="drop">
-									<a class="btn btn-list">
-										<i class="material-icons checkbox">check_box_outline_blank</i>
-										<i class="material-icons checked">check_box</i>
-										Upload Your Files
-									</a>
-								</li>
-								<li data-group="variablemarketingdata" class="drop">
-									<a class="btn btn-list">
-										<i class="material-icons checkbox">check_box_outline_blank</i>
-										<i class="material-icons checked">check_box</i>
-										Variable Marketing Data
 									</a>
 								</li>
 							</ul>
@@ -917,13 +884,41 @@ function FillCostInfo(strProduct, intArrayIndex)
 										Men's
 									</a>
 								</li>
-								<li data-group="womens" class="drop">
+								<li data-group="women" class="drop">
 									<a class="btn btn-list">
 										<i class="material-icons checkbox">check_box_outline_blank</i>
 										<i class="material-icons checked">check_box</i>
 										Women's
 									</a>
 								</li>
+								<li data-group="unisex" class="drop">
+									<a class="btn btn-list">
+										<i class="material-icons checkbox">check_box_outline_blank</i>
+										<i class="material-icons checked">check_box</i>
+										Unisex
+									</a>
+								</li>
+								<li data-group="backpack" class="drop">
+									<a class="btn btn-list">
+										<i class="material-icons checkbox">check_box_outline_blank</i>
+										<i class="material-icons checked">check_box</i>
+										backpacks
+									</a>
+								</li>
+								<li data-group="promotional" class="drop" >
+									<a class="btn btn-list">
+										Promotional <i class="material-icons">keyboard_arrow_down</i>
+									</a>
+									<ul class="sub-menu">
+										<li data-group="all" class="drop">
+											<a class="btn btn-list">
+												<i class="material-icons checkbox">check_box_outline_blank</i>
+												<i class="material-icons checked">check_box</i>
+												View All
+											</a>
+										</li>
+									</ul>
+								</li>		
 							</ul>
 						</li>
 					</ul>
@@ -932,7 +927,7 @@ function FillCostInfo(strProduct, intArrayIndex)
 			<div class="col-9 col-xs-12">
 				<div class="product-container row">
 					<div class="product-title col-12">
-						<h2>Editable Products</h2>
+						<h2>Products</h2>
 					</div>
 					<div class="col-12">
 						<div class="shuffle-container row">
@@ -971,40 +966,6 @@ function FillCostInfo(strProduct, intArrayIndex)
 		</div>
 	</div>
 
-	<!-- <table class="table" data-toggle="table" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="productName">
-		<script type="text/javascript" language="javascript">
-			hs.registerOverlay({
-			thumbnailId: 'thumbimg{id}',
-			overlayId: 'closebutton{id}',
-			position: 'top right',
-			fade: 2
-			});
-		</script> -->
-		<!--Style-->
-	    <!-- <thead>
-	      <tr>
-	        <th data-field="Thumbnail">Thumbnail</th>
-	        <th data-field="productName" data-sortable="true">Product Name</th>
-	        <th data-field="ProductSelect">Select Product</th>
-	      </tr>
-	    </thead>
-	    <tbody> -->
-	    	<!--TemplateItem-->
-	    	<!-- <tr>
-	    		<td>
-	    			<a href={Thumbnail} class="highslide" onclick='return hs.expand(this, {outlineType: "rounded-white", wrapperClassName: "highslide-white"})'><img id=thumbimg{id} src={Thumbnail} alt="{ThumbnailAlt}" width="85" title="Click to enlarge"></a>
-					<div id="closebutton{id}" class="highslide-overlay closebutton"	onclick="return hs.close(this)" title="Close"></div>
-					<span id="templatecost{id}"></span>
-	    		</td>
-	    		<td><b>{TemplateName}</b> --><!--ExTRAS--><!-- </td>
-	    		<td><input class="btn btn-primary" type="button" onClick="javascript:window.location='{location}'" value="{SelectButtonCaption}"></td>
-	    	</tr> -->
-	    	<!--/TemplateItem-->
-	    	
-	   <!--  </tbody> -->
-	    <!--/Style-->
-    <!-- </table> -->
-	<!--Products-->
 	
 	<div class="static-products">
 		<h2>Static Products</h2>
