@@ -7,7 +7,7 @@
 		!cHeader.htm!
 		<!--<link rel="stylesheet" href="include/templatemb.css" type="text/css"/>-->
 		<title>{Title} | Intuitive Health Admin Storefront</title>
-		<link rel="stylesheet" type="text/css" href="Include/dropdown.css">
+		<link rel="stylesheet" type="text/css" href="Files/BrokerBranding/intuitive/Include/dropdown.css">
 	</head>
 	<body onload="if (typeof functionOnLoad =='function')functionOnLoad();" class="{Title}">
 
@@ -81,7 +81,9 @@
 											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 												<!-- <span class="sr-only">Toggle navigation</span> -->
 												<!-- <span class="icon-bar"></span> -->
-												<span class="icon-bar">Shop</span>
+												<span class="icon-bar">
+													Shop
+												</span>
 												<!-- <span class="icon-bar"></span> -->
 											</button>
 											<!-- <a class="navbar-brand" href="#">Shop</a> -->
@@ -175,12 +177,27 @@
 											</ul>
 										</div>
 									</div>
-								</div>
-							</div>
+								</li>
+								<li class="nav-item d-flex justify-content-center align-items-center">
+									<a class="nav-link" href="/orders.asp">
+										<i class="material-icons">reorder</i> 
+										Orders
+									</a>
+								</li>
+							</ul>
+							<ul class="nav float-sm-right">
+								<li class="nav-item d-flex justify-content-center align-items-center">
+									<a class="nav-link" href="/cart.asp">
+										<i class="fas fa-shopping-cart"></i> 
+										Shopping Cart
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-				</nav> 
-										
+				</div>
+			</nav>
+											
 <!--
 		  // This is the start to the main content that will be diplayed on each
 		  // page. This has been edited so it uses bootstrap instead of tables.  

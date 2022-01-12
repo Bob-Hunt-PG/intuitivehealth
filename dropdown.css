@@ -1,3 +1,8 @@
+.navbar-toggle {
+    border: none;
+    background-color: white;
+}
+
 .dropdown-submenu {
     position: relative;
 }
