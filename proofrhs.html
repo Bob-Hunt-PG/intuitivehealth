@@ -1116,12 +1116,14 @@ function CheckSaveIntegrity()
 <!--Write-->
 <form action="step3edit.asp?HT={HT}" method="Post" {formtarget} id=form4 name=form4>
     <input type="hidden" name="torder2" id="torder2" value="{torder}" />
-    <table class="table proofwrite" id=proofScreenEditOrderDetails>
+    <table class="table proofwrite m-0" id=proofScreenEditOrderDetails>
         <tr>
-            <td colspan="2" align="left" class=bordertableheader>
+            <td colspan="2" align="left" class="bordertableheader hide">
                 <!--HiddenVariables-->
                 <!--HiddenEVariables-->
+                <div>
                 <!--EditOrderDetailsButton--><input class="btn btn-primary" type="submit" value="{ButtonEditOrderDetailsCaption}"><!--/EditOrderDetailsButton-->&nbsp;
+                </div>
             </td>
         </tr>
     </table>

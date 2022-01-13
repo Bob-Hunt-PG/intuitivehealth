@@ -22,10 +22,15 @@
     padding: 0.5rem 1rem 0.5rem 0;
 }
 
-.navigation.nav-main .nav .nav-item .nav-link {
+.nav-item .nav-link {
     font-size: .75rem;
     font-weight: 600;
     text-transform: uppercase;
     color: #000;
     padding: 1.75rem 1rem;
+}
+
+/* Override Bootstrap darkness level when hovering */
+.nav-item .nav-link:hover {
+    color: rgba(0,0,0,1) !important;
 }

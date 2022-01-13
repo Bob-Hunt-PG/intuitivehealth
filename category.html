@@ -996,69 +996,8 @@ function FillCostInfo(strProduct, intArrayIndex)
 	<input type="submit" name="btnCart" id="btnCart" value="{AddToCartCheckoutButtonCaption}">
 	<!--/ADDCART-->
 	
-    <table class="table" data-toggle="table" data-search="true">
-	    <thead>
-	    	<tr>
-	    		<th data-field="Empty">&nbsp;</th>
-	    		<th data-field="Thumbnail">&nbsp;</th>
-	    		<th data-field="{ProductCaption}" data-sortable="true">{ProductCaption}</th>
-	    		<th data-field="{QuantityCaption}">{QuantityCaption}</th>
-	    		<!--stock--><th data-field="{StockCaption}">{StockCaption}</th><!--/stock-->
-	    		<!--ExtraHeader-->
-	    		<!--Urgent--><th data-field="{UrgentCaption}">{UrgentCaption}</th><!--/Urgent-->
-	    	</tr>
-	    </thead>
-	    <tbody>
-	    	<!--ProductStyle-->
-	    	<tr>
-	    		<td>
-	    			<div class="productCheckboxBorder">
-						<!--ProductCheckBox--><input type="checkbox" name="template" id="template{templateid}" value="{templateid}"><!--/ProductCheckBox-->
-						<!--Download--> <input type="button" value="{DownloadCaption}" onclick="download(this, '{templateid}')"><!--/Download-->
-					</div>
-				</td>
-				<td>
-					<script language="javascript" type="text/javascript">
-						hs.registerOverlay({thumbnailId: 'thumbimg{templateid}', overlayId: 'closebutton{templateid}', position: 'top right', fade: 2});
-					</script>
-					<a href={thumb} class="highslide" onclick='return hs.expand(this)'><img id="thumbimg{templateid}" src={thumb}></a>
-					<div id='closebutton{templateid}' class='highslide-overlay closebutton' onclick='return hs.close(this)' title='Close'></div>
-					<span id="templatecost{templateid}" class="clscost" {hidecost}></span>
-				</td>
-				<td>
-					<a href="JavaScript:openWin('ShowProduct.asp?Id={templateid}&si=' + document.getElementById('{prodid}{templateid}').value);">{templatename}</a>
-					<input type="hidden" name="ProductName{templateid}" value="{templatename}">
-				</td>
-				<td>
-					<div style="display:{hidedownloadcheckbox}" id=downloadonlycheckbox>Download&nbsp;only?&nbsp;<input type=checkbox {checkdownload}  name=DownloadOnly{templateid} id=DownloadOnly{templateid} onclick="SetDownloadOnly('{templateid}')"><br></div>
-					{quantity}
-					<!--AttachFile-->
-					{AttachCaption}
-					<a href='UploadAttachment.asp?productcat=yes&tid={templateid}&qty={qtyfromupload}' id="hsfileattachment" onclick="return hs.htmlExpand(this, { outlineType: 'rounded-white', wrapperClassName: 'highslide-wrapper', objectType: 'iframe', preserveContent: false, width:400} )">{ClickHereAttachCaption}</a>
-					<span id="fileuploadspan{templateid}"></span>
-					<input type="hidden" name="fileupload{templateid}" id="fileupload{templateid}"><input type="hidden" name="fileuploadname{templateid}" id="fileuploadname{templateid}">
-					<!--/AttachFile-->
-				</td>
-				<!--stock-->
-				<td><span class="stock">{stockqty}</span></td>
-				<!--/stock-->
-				{extras}
-				<!--Urgent--><td>{urgent}</td><!--/Urgent-->
-	    	</tr>
-	    	<!--Description-->
-	    	<tr>
-				<td>{desc}</td>
-	    	</tr>
-	    	<!--/Description-->
-			<!--/ProductStyle-->
-	    </tbody>
-    </table>
-    <div class="addtocart">
-	    <input class="btn btn-primary" type="submit" name="btnCartContinue" id="btnCartContinue" value="{AddToCartButtonCaption}">
-		<input class="btn btn-primary" type="submit" name="btnCart" id="btnCart" value="{AddToCartCheckoutButtonCaption}">
-		<span id="process" name="process"></span>
-	</div>
-	<!--/Products-->
+<!-- Deleted a large chunk of code here which produced content above the product filter.  -->
+<!-- See intuitiveLE to reference the deleted code. It is commented out on intuitiveLE. -->
 
 	<!--CATEGORIES-->
 	<table class="table categories d-none">

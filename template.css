@@ -117,7 +117,7 @@ form[name="Approve"] table tr td[colspan="9"] {
 	padding: 0.5rem 1rem 0rem 0;
 }
 
-.navigation.nav-main .nav .nav-item .nav-brand img {
+.navbar-brand img {
 	max-height: 45px;
 }
 
@@ -1142,6 +1142,14 @@ td.nexjoboptions table tr td[align="right"] {
 	#contenttable {
 		justify-content: center;
 		padding-bottom: 3rem;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	td.proof-container > p {
+		display: none;
 	}
 
 /**
