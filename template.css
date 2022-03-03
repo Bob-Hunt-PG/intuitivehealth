@@ -148,9 +148,9 @@ form[name="Approve"] table tr td[colspan="9"] {
 }
 
 .help {
-	font-size: 0.75rem;
-	color: #cccccc;
-	padding: 1rem 0;
+    font-size: 1rem;
+    color: #404040;
+    padding: 1rem 0;
 }
 
 .help a {
@@ -159,6 +159,43 @@ form[name="Approve"] table tr td[colspan="9"] {
 
 .help a:last-of-type {
     color: #000000;
+}
+
+.table.login,
+.table.register,
+.table.update {
+width: 100%;
+max-width: 400px;
+border: 1px solid #dddddd;
+}
+
+.table.login th,
+.table.register th,
+.table.update th,
+.table.categories th {
+padding: 16px;
+background: #ffffff;
+}
+
+.table.login {
+    float: left;
+}
+
+.table.register {
+    float: left;
+    margin: 0 0 0 50px;
+}
+
+.table.login .table tr td, 
+.table.register .table tr td, 
+.table.update .table tr td {
+    border: none;
+    padding: 8px;
+}
+
+.footer-panel.contact-info ul li {
+    line-height: 1.25;
+    padding: 0 0 0.75rem;
 }
 
 .proofthumbnailform {
